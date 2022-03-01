@@ -12,7 +12,7 @@ This is patch-1
 
 Checking [j-r-l](https://github.com/benbalter/jekyll-relative-links).
 
-{% raw % }
+{% raw %}
 ```
 [About](/about/)
 ```
