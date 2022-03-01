@@ -18,7 +18,23 @@ Checking [j-r-l](https://github.com/benbalter/jekyll-relative-links).
 ```
 {% endraw %}
 
-[About]({{site.baseurl}}/about/) <-- it works
+[about.md]({{site.baseurl}}/about/) <-- OK
+
+{% raw %}
+```
+[About](./about.md)
+```
+{% endraw %}
+
+[about.md](./about.md) <-- ?
+
+{% raw %}
+```
+[About](./about.html)
+```
+{% endraw %}
+
+[about.md](./about.html) <-- ?
 
 {% raw %}
 ```
@@ -26,12 +42,10 @@ Checking [j-r-l](https://github.com/benbalter/jekyll-relative-links).
 ```
 {% endraw %}
 
-[About]({{site.baseurl}}/dummy/) <-- it doesn't work.
+[_pages/dummy.md]({{site.baseurl}}/dummy/) <-- 404.
 
 {% raw %}
 ```
-[About]({{site.baseurl}}/_pages/dummy/)
+[_pages/dummy.md]({{site.baseurl}}/_pages/dummy/)
 ```
 {% endraw %}
-
-[About]({{site.baseurl}}/_pages/dummy/) <-- it doesn't work.
