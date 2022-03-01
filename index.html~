@@ -1,0 +1,12 @@
+---
+title: Home
+permalink: /
+---
+<section id="about-section">
+  <h2>About</h2>
+  <div class="about-intro">
+    <div class="intro-text"></div>
+    <a class="about-link" href="">Learn more</a>
+  </div>
+</section>
+

@@ -8,14 +8,19 @@
 layout: home
 ---
 
-This is patch-1
+{% raw %}
 
-Checking [j-r-l](https://github.com/benbalter/jekyll-relative-links).
+<!-- https://stackoverflow.com/questions/4629675/jekyll-markdown-internal-links -->
+<!-- https://stackoverflow.com/questions/25826770/jekyll-using-links-to-internal-markdown-files -->
 
-{% raw % }
+{% endraw %}
+
+Let's try:
+{% raw %}
 ```
-[About](/about/)
+{{ page.path }}
+{{ about.html }}
 ```
 {% endraw %}
 
-[About](/about/)
+[about]({{ "/about" | relative_url }})
