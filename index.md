@@ -18,4 +18,12 @@ Checking [j-r-l](https://github.com/benbalter/jekyll-relative-links).
 ```
 {% endraw %}
 
-[About]({{site.baseurl}}/about/)
+[About]({{site.baseurl}}/about/) <-- it works
+
+{% raw %}
+```
+[About]({{site.baseurl}}/dummy/)
+```
+{% endraw %}
+
+[About]({{site.baseurl}}/dummy/) <-- ??
