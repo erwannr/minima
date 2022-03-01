@@ -14,8 +14,8 @@ Checking [j-r-l](https://github.com/benbalter/jekyll-relative-links).
 
 {% raw %}
 ```
-[About](/about/)
+[About]({{site.baseurl}}/about/)
 ```
 {% endraw %}
 
-[About](/about/)
+[About]({{site.baseurl}}/about/)
