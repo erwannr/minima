@@ -1,0 +1,19 @@
+
+Main:
+```
+$ sudo apt-get install webrick
+$ echo ' - jekyll-relative-links' >> _config.yml
+$ echo ' - show_drafts' >> _config.yml
+$ echo "gem 'jekyll-relative-links'" >> Gemfile
+$ sudo bundle add webrick
+
+To serve locally, first look for open processes matching jekyll and kill them.
+```
+$ sudo netstat -anp | grep 4000
+$ sudo kill -9 <PID>
+```
+Then:
+```
+$ sudo bundler exec jekyll serve
+```
+
