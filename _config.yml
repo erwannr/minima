@@ -56,6 +56,20 @@ minima:
 # Build settings
 theme: minima
 
+# <customize href=https://kylewbanks.com/blog/creating-category-pages-in-jekyll-without-plugins>
+collections:
+  category:
+    output: true
+defaults:
+  -
+    scope:
+      path: ""
+      type: category
+    values:
+      layout: "category"      
+# </customize>
+
+
 # Disqus Comments
 disqus:
     # Leave shortname blank to disable comments site-wide.
