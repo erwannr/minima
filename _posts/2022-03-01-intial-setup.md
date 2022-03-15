@@ -1,3 +1,5 @@
+
+## Initial setup
 This is from memory I haven't tested.
 
 Packages:
@@ -35,3 +37,8 @@ $ sudo bundler exec jekyll serve
 This will create `_site`. 
 In the browser, type address `http://127.0.0.1:4000`.
 This address should load: `http://127.0.0.1:4000/dummy/`
+
+###  Resources
+
+https://jetholt.com/micro/jekyll-tags-and-categories/
+https://lazyren.github.io/devlog/creating-tag-list-page.html

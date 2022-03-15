@@ -8,5 +8,7 @@
 layout: home
 ---
 
-This is patch-1
+About: testing Jekyll.
+
+Source: [https://github.com/erwannr/minima](https://github.com/erwannr/minima)
 
